@@ -32,7 +32,7 @@
   });
 
   /***** Remove Top Banner *****/
-  $("main > div").first().remove();
+  $('div.head-slider-top').parent().remove();
 
   /***** Change Icon *****/
   $(() => {
