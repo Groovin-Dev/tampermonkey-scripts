@@ -13,6 +13,8 @@
 (function () {
   "use strict";
 
+  // Test
+  
   /***** Delete Ads *****/
   $("div.ad-sticky").remove();
   $("div.adsbox").remove();
