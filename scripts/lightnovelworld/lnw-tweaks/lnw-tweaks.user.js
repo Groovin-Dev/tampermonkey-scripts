@@ -2,6 +2,7 @@
 // @name         LNW Tweaks
 // @namespace    https://www.lightnovelworld.com/
 // @version      0.1
+// @license MIT
 // @description  Small tweaks to LNW to make the reading experience better
 // @author       Meliodas#0001
 // @match        https://www.lightnovelworld.com/*
