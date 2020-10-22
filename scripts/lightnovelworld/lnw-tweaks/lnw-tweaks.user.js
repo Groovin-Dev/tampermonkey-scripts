@@ -139,5 +139,6 @@
 
   /***** Testing *****/
   $("span.ljkmoi").remove();
+  $("section.recommends").remove();
   //$("div.chapter-content > br").remove();
 })();
