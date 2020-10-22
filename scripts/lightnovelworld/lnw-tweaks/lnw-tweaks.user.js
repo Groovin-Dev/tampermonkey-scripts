@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LNW Tweaks
 // @namespace    https://www.lightnovelworld.com/
-// @version      0.3
+// @version      0.4
 // @license      MIT
 // @description  Small tweaks to LNW to make the reading experience better
 // @author       Meliodas#0001
@@ -13,8 +13,6 @@
 (function () {
   "use strict";
 
-  // Test
-  
   /***** Delete Ads *****/
   $("div.ad-sticky").remove();
   $("div.adsbox").remove();
@@ -26,7 +24,7 @@
   $("div.chapter-content").css({
     "user-select": "auto",
   });
-  
+
   /***** Update the notices page *****/
   // Change button colors
   $('div.stats > span').css({
@@ -36,10 +34,10 @@
 
   /***** Change Update Bell *****/
   $("span.notify-bell").css({
-    animation: "none",
+    "animation": "none",
     "-webkit-animation": "none",
     "-moz-animation": "none",
-    color: "#B21634",
+    "color": "#B21634",
   });
 
   /***** Remove Top Banner *****/
@@ -115,6 +113,7 @@
   });
 
   /***** In Text Ads *****/
+
   const inTextAds = [
     "Find authorized novels in ReadNovelFull，faster updates, better experience，Please click for visiting.",
     "Find authorized novels in ReadNovelFull，faster updates, better experience，Please click www.ReadNovelFull.com for visiting.",
@@ -147,7 +146,8 @@
 
   /***** Testing *****/
   $("span.ljkmoi").remove();
-  $("section.recommends").remove();
+  $("article#chapter-article > section.recommends").remove();
+  $("footer").remove();
   $("div.izknfc").remove();
   //$("div.chapter-content > br").remove();
 })();
