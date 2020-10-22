@@ -20,11 +20,19 @@
   $("div.adsbox").remove();
   $("div.vl-ad").remove();
   $("div.ad-container").remove();
+  $("li.listads").remove();
 
   /***** Allow Selecting Text *****/
   $("div.chapter-content").css({
     "user-select": "auto",
   });
+  
+  /***** Update the notices page *****/
+  // Change button colors
+  $('div.stats > span').css({
+      'background-color': 'rgb(42, 37, 148)',
+      'color': 'rgb(232, 230, 227)'
+  })
 
   /***** Change Update Bell *****/
   $("span.notify-bell").css({
@@ -140,5 +148,6 @@
   /***** Testing *****/
   $("span.ljkmoi").remove();
   $("section.recommends").remove();
+  $("div.izknfc").remove();
   //$("div.chapter-content > br").remove();
 })();
